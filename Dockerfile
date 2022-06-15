@@ -41,12 +41,12 @@ ENV PORT=4000 \
     SECRET_KEY_BASE="CbdfoyVoejFog218r8FySfkbhKk+cuZilFd8zr6iU8il/3GW4MocwMd+DZqn/9jI"
 
 # copy exs files
-#ADD submodules/blockscout/mix.exs ./
-#ADD submodules/blockscout/apps/block_scout_web/mix.exs ./apps/block_scout_web/
-#ADD submodules/blockscout/apps/explorer/mix.exs ./apps/explorer/
+ADD submodules/blockscout/mix.exs ./
+ADD submodules/blockscout/apps/block_scout_web/mix.exs ./apps/block_scout_web/
+ADD submodules/blockscout/apps/explorer/mix.exs ./apps/explorer/
 
-#ADD submodules/blockscout/apps/ethereum_jsonrpc/mix.exs ./apps/ethereum_jsonrpc/
-#ADD submodules/blockscout/apps/indexer/mix.exs ./apps/indexer/
+ADD submodules/blockscout/apps/ethereum_jsonrpc/mix.exs ./apps/ethereum_jsonrpc/
+ADD submodules/blockscout/apps/indexer/mix.exs ./apps/indexer/
 ADD submodules/blockscout/. .
 
 RUN mix deps.get
