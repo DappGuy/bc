@@ -38,7 +38,7 @@ EXPOSE 4000
 
 ENV PORT=4000 \
     MIX_ENV="prod" \
-    SECRET_KEY_BASE="RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5"
+    SECRET_KEY_BASE="CbdfoyVoejFog218r8FySfkbhKk+cuZilFd8zr6iU8il/3GW4MocwMd+DZqn/9jI"
 
 # copy exs files
 #ADD submodules/blockscout/mix.exs ./
