@@ -41,10 +41,6 @@ ENV PORT=4000 \
     SECRET_KEY_BASE="CbdfoyVoejFog218r8FySfkbhKk+cuZilFd8zr6iU8il/3GW4MocwMd+DZqn/9jI"
 
 
-
-RUN mix deps.get
-
-
 ARG COIN
 RUN if [ "$COIN" != "" ]; then sed -i s/"POA"/"${COIN}"/g apps/block_scout_web/priv/gettext/en/LC_MESSAGES/default.po; fi
 
