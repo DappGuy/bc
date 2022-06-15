@@ -24,9 +24,6 @@ RUN \
 ENV PATH=./node_modules/.bin:$PATH
 
 
-# Ensure latest versions of Hex/Rebar are installed on build
-ONBUILD RUN mix do local.hex --force, local.rebar --force
-
 
 # Get Rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -43,9 +40,6 @@ ENV PORT=4000 \
 
 ARG COIN
 RUN if [ "$COIN" != "" ]; then sed -i s/"POA"/"${COIN}"/g apps/block_scout_web/priv/gettext/en/LC_MESSAGES/default.po; fi
-
-# Run forderground build and phoenix digest
-RUN mix compile
 
 # Add blockscout npm deps
 RUN cd apps/block_scout_web/assets/ && \
