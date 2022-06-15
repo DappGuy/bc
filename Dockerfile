@@ -41,7 +41,6 @@ ENV PORT=4000 \
     SECRET_KEY_BASE="CbdfoyVoejFog218r8FySfkbhKk+cuZilFd8zr6iU8il/3GW4MocwMd+DZqn/9jI"
 
 # copy exs files
-ADD submodules/blockscout/mix.exs ./
 ADD submodules/blockscout/apps/block_scout_web/mix.exs ./apps/block_scout_web/
 ADD submodules/blockscout/apps/explorer/mix.exs ./apps/explorer/
 
