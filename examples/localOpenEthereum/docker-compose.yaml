@@ -7,7 +7,7 @@ services:
             POSTGRES_USER: postgres
         network_mode: host
     blockscout:
-        image: surfingnerd/blockscout:v0.8-372
+        image: blockscout:test
         depends_on:
             - "db"
         ports:
