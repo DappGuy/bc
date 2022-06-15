@@ -44,10 +44,6 @@ ENV PORT=4000 \
 ADD submodules/blockscout/apps/block_scout_web/mix.exs ./apps/block_scout_web/
 ADD submodules/blockscout/apps/explorer/mix.exs ./apps/explorer/
 
-ADD submodules/blockscout/apps/ethereum_jsonrpc/mix.exs ./apps/ethereum_jsonrpc/
-ADD submodules/blockscout/apps/indexer/mix.exs ./apps/indexer/
-ADD submodules/blockscout/. .
-
 RUN mix deps.get
 
 
